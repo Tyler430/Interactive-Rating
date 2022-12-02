@@ -41,7 +41,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Display flex
+- CSS Flexbox
 - Mobile-first workflow
 
 ### What I learned
