@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <script src="index.js" defer></script>
+    <title>Interactive Rating</title>
+</head>
+<body>
+    <main>
+        <article class="card ratingState">
+            <img class="star" src="./images/icon-star.svg">
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="ratingButtons">
+                <ul>
+                    <li><button id="oneStar" class="btnRates">1</button></li>
+                    <li><button id="twoStars" class="btnRates">2</button></li>
+                    <li><button id="threeStars" class="btnRates">3</button></li>
+                    <li><button id="fourStars" class="btnRates">4</button></li>
+                    <li><button id="fiveStars" class="btnRates">5</button></li>
+                </ul>
+            </div>
+            <button id="submitRating" class="btnSubmit">Submit</button>
+        </article>
+
+        <article class="cardThankYou hidden thankYouState">
+            <img class="thankYou" src="./images/illustration-thank-you.svg">
+            <p id="amountSelected" class="amountSelected">You selected 5 out of 5</p>
+            <h2 class="titleThankYou">Thank you!</h2>
+            <p class="thankYouBody">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+            <button id="backRating" class="backRating">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21,11H6.83L10.41,7.41L9,6L3,12L9,18L10.41,16.58L6.83,13H21V11Z" />
+            </svg>
+        </button>
+        </article>
+
+        <footer>
+            <span class="footer">
+                Challenge by <a href="">Frontend Mentor</a>.
+                Coded by <a href="">Tyler</a>.
+            </span>
+        </footer>
+    </main>
+</body>
+</html>
