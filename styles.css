@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --lightGrey: hsl(217, 12%, 63%);/*  Hover Button State Color  */
+    --orange: hsl(25, 97%, 53%);/*  Selcted State Color / Submit Color  */
+    --veryDarkBlue: hsl(216, 12%, 8%); /*  Body Background Color  */
+    --lightBlue: hsl(213, 19%, 21%); /*  Star Background Color  */
+    --darkBlue: hsl(213, 19%, 18%);/*  Star Background Color  */
+    --white: hsl(0, 0%, 100%);/*  Card Title Text Color  */
+    --mediumGrey: hsl(216, 12%, 54%);/*  Card Body Text Color  */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+footer span {
+    color: var(--white);
+}
+
+footer a {
+    color: var(--orange);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card, .cardThankYou {
+    background-color: var(--darkBlue);
+    border-radius: 20px;
+    max-width: 23rem;
+    max-height: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .8);
+}
+
+.card h2 {
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--lightGrey);
+    padding: 1rem;
+}
+
+.star {
+    background-color: var(--lightBlue);
+    border-radius: 50%;
+    min-height: 1.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.ratingButtons ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ratingButtons ul li button { 
+    transition: all 1s ease-in-out;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--lightBlue);
+    color: var(--white);
+    padding-top: 0.2rem;
+}
+
+.ratingButtons ul li button:focus {
+    background-color: var(--orange);
+}
+
+
+.btnRates:hover {
+    background-color: var(--lightGrey);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.btnSubmit {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0 0.4rem;
+    margin: 1rem;
+    transition: all 1s ease-in-out;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.btnSubmit:hover {
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+/*  Thank You State  */
+
+.cardThankYou {
+    transition: all 1s ease-in-out;
+}
+
+.titleThankYou {
+    color: var(--white);
+    font-size: x-large;
+    padding: 1rem;
+    position: relative;
+    left: 6.5rem;
+}
+
+.thankYou {
+    padding: 2rem;
+    position: relative;
+    left: 4.3rem;
+}
+
+.amountSelected {
+    background-color: var(--lightBlue);
+    border-radius: 20px;
+    color: var(--orange);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    width: 10rem;
+    align-items: center;
+    position: relative;
+    left: 6.5rem;
+    bottom: 1rem;
+}
+
+.thankYouBody {
+    color: var(--mediumGrey);
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1.5;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.hidden {
+    display: none; 
+}
+
+.backRating {
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+}
+
+@media (max-width: 375px) {
+    .card, .cardThankYou {
+        position: relative;
+    }
+}
