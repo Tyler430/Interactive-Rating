@@ -61,7 +61,7 @@ This will display the h1 in the center of the screen!
 
 ### Useful resources
 
-- [W3 Schools Flex](https://www.w3schools.com/css/css3_flexbox.asp) - This helped me for to understand how Flexbox works. I really liked how they explained everything about it and will use it going forward.
+- [W3 Schools Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - This helped me for to understand how Flexbox works. I really liked how they explained everything about it and will use it going forward.
 
 ## Author
 
